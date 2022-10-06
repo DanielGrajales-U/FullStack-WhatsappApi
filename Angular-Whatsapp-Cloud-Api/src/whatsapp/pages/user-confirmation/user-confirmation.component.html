@@ -1,0 +1,28 @@
+<form>
+    <div class="row">
+        <div class="col-1">
+            <label for="name">Name</label>
+        </div>
+        <div class="col">
+            <input type="text" id="name" name="name" [(ngModel)]="name" class="form-control-name" placeholder="Name">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            <label for="age">Age</label>
+        </div>
+        <div class="col">
+            <input type="text" id="age" name="age" [(ngModel)]="age" class="form-control-age" placeholder="Age">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            <label for="phone">Phone</label>
+        </div>
+        <div class="col">
+            <input type="text" id="phone" name="phone" [(ngModel)]="toNumber" class="form-control-phone" placeholder="Phone">
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" (click)="send()">Enviar</button>
+</form>
